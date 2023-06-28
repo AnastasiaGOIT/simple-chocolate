@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -67,7 +68,58 @@
             </a>
           </li>
         </ul>
-      </div>
+      
+      <button type="button" class="menu-btn">
+      <svg class="mob-menu-svg" width="28" height="28">
+                <use href="./images/symbol-defs.svg#icon-menu-hamburger"></use>
+              </svg>
+              </button>
+              </div>
+              <!-- <div class="open-menu-div">
+                <button type="button" class="open-menu-btn">
+      <svg class="mobile-menu-close" width="28" height="28">
+                <use href="./images/symbol-defs.svg#icon-x-close-1"></use>
+              </svg>
+                   <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Home</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">How it’s made?</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Chocolate is loved</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mob-soc-list">
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href=""
+              aria-label="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="header-insta" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-soc-item">
+            <a
+              class="header-soc-link"
+              href=""
+              aria-label="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="header-twit" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+              </div> -->
     </header>
     <main>
       <section id="home" class="hero-section">
@@ -286,7 +338,7 @@
           </ul>
         </div>
       </section>
-      <section class="made-section" id="made">
+      <!-- <section class="made-section" id="made">
         <div class="made-div container">
           <h2 class="made-title title-style">HOW IT’S <span>MADE?</span></h2>
           <div class="made-list-wrap">
@@ -336,8 +388,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="loved-section" id="loved">
+      </section> -->
+      <!-- <section class="loved-section" id="loved">
         <div class="loved-div container">
           <h2 class="loved-title title-style">
             <span>chocolate</span> is loved
@@ -393,9 +445,9 @@
             Leave a review
           </button>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer" id="footer">
+    <!-- <footer class="footer" id="footer">
       <div class="footer-div container">
         <div class="footer-wrap">
           <p class="footer-title">
@@ -457,7 +509,45 @@
             <use href="./images/symbol-defs.svg#icon-x-close-1"></use>
           </svg>
         </button>
-      </div>
+        <p class="modal-title title-style">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <label for="costumer-name">
+            <input
+              class="modal-input"
+              type="text"
+              id="costumer-name"
+              name="name"
+              placeholder="Name"
+          /></label>
+
+          <label for="costumer-email">
+            <input
+              class="modal-input"
+              type="email"
+              id="costumer-email"
+              name="email"
+              placeholder="Email"
+          /></label>
+
+          <label for="costumer-tel">
+            <input
+              class="modal-input"
+              type="tel"
+              id="costumer-tel"
+              name="tel"
+              placeholder="Phone number"
+          /></label>
+
+          <textarea
+            name="textarea"
+            class="modal-textarea"
+            placeholder="Enter text"
+          ></textarea>
+          <button type="submit" class="modal-btn-send">Send</button>
+        </form>
+      </div> -->
     </div>
     <script src="./js/modal.js"></script>
   </body>
