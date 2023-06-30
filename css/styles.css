@@ -180,13 +180,12 @@ a {
 }
 .hero-btns-div {
   display: flex;
-  flex-wrap: nowrap;
-  /* flex-wrap: wrap; */
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
   align-items: center;
 }
 .hero-btn {
   padding: 12px 28px;
-
   background: #fd9222;
   border-radius: 100px;
   border: none;
@@ -196,6 +195,12 @@ a {
   color: #ffffff;
   cursor: pointer;
   margin-right: 14px;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--orange-color);
+  transition: background-color 300ms linear;
 }
 .hero-link-how {
   display: inline-block;
@@ -207,6 +212,13 @@ a {
   line-height: 1.21;
   color: #ffffff;
   background-color: transparent;
+}
+.hero-link-how:hover,
+.hero-link-how:focus {
+  background-color: #fff;
+  border-color: var(--orange-color);
+  color: var(--orange-color);
+  transition: background-color 300ms linear;
 }
 .hero-scroll {
   font-weight: 500;
@@ -220,13 +232,19 @@ a {
   align-items: center;
   gap: 14px;
 }
+.hero-scroll:hover,
+.hero-scroll:focus {
+  background-color: #ffffff;
+  color: var(--orange-color);
+  transition: background-color 300ms linear;
+  border-radius: 10px;
+}
 .hero-scroll span {
   display: block;
   width: 38px;
   height: 38px;
   background-color: #ffffff;
   border-radius: 50%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,7 +253,12 @@ a {
 .scroll-svg {
   fill: #fd9222;
 }
-
+.scroll-span:hover {
+  background-color: var(--orange-color);
+}
+.scroll-svg:hover {
+  fill: #fff;
+}
 /*---------Benefits-----------*/
 .benefits-section {
   width: 100%;
@@ -538,6 +561,12 @@ a {
   display: block;
   margin: 0 auto;
 }
+.loved-btn:hover,
+.loved-btn:focus {
+  background-color: var(--orange-color);
+  color: #fff;
+  transition: background-color 300ms linear;
+}
 /*---------footer-----------*/
 .footer {
   background-color: #1e1823;
@@ -699,6 +728,11 @@ a {
 .modal-form {
   /* width: 263px; */
 }
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--orange-color);
+  transition: border-color 300ms linear;
+}
 .modal-input {
   padding: 14px 18px;
 
@@ -732,6 +766,11 @@ a {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   resize: none;
   margin-bottom: 18px;
+}
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border-color: var(--orange-color);
+  transition: border-color 300ms linear;
 }
 .modal-btn-send {
   color: #fff;
