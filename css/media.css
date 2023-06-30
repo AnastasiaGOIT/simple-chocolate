@@ -5,6 +5,173 @@
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 734px;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .header {
+    padding: 24px 32px 32px 32px;
+  }
+  .header-container {
+    display: flex;
+    /* padding-top: 24px;
+    padding-bottom: 32px; */
+  }
+  .header-logo-link {
+    align-items: center;
+    margin-right: auto;
+  }
+  .header-menu-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .header-soc-list {
+    display: flex;
+    /* max-width: 66px; */
+    gap: 18px;
+    margin-left: 48px;
+  }
+  .hero-section {
+    padding-bottom: 40px;
+  }
+  .hero-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../images/tablet-cocoa-powder.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 671px 40px 40px 40px;
+    background-color: #fcf1e0;
+    border-radius: 30px;
+    width: 704px;
+  }
+  .hero-title {
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    max-width: 484px;
+  }
+  .hero-btn {
+    padding: 14px 40px;
+  }
+  .hero-link-how {
+    padding: 14px 40px;
+  }
+  .hero-scroll {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  .hero-btns-div {
+  }
+  .benefits-div {
+    padding: 50px 32px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 28px;
+  }
+  .benefits-item:last-child {
+    margin-right: auto;
+  }
+  .benefits-item {
+    width: calc((100% - 32px) / 2);
+  }
+  .products-div {
+    width: 704px;
+  }
+  .products-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .products-title {
+    font-size: 24px;
+    margin-bottom: 28px;
+    width: 411px;
+  }
+  .products-text {
+    margin-bottom: 50px;
+  }
+  .products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .products-item {
+    width: calc((100% - 32px) / 2);
+
+    padding: 28px 56px 28px 28px;
+  }
+  .made-div {
+    width: 614px;
+    padding-bottom: 80px;
+  }
+  .made-title {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+  .made-text-wrap {
+    padding: 32px 32px 32px 32px;
+  }
+  .loved-section {
+    padding-bottom: 80px;
+  }
+  .loved-title {
+    margin-bottom: 91px;
+  }
+  .loved-btn {
+    padding: 14px 40px;
+  }
+
+  .footer-div {
+    padding: 50px 32px;
+    width: 768px;
+    height: 291px;
+  }
+  .footer-wrap {
+    flex-direction: row;
+    margin-bottom: 24px;
+    align-items: normal;
+  }
+  .footer-nav-list {
+    flex-direction: row;
+    gap: 16px;
+    width: 304px;
+    height: 16px;
+  }
+  .footer-contact-wrap {
+    margin-right: unset;
+  }
+  .footer-text {
+    margin-top: 0;
+  }
+  .only-tablet-footer {
+    display: none;
+  }
+  .footer-form {
+    margin-left: 32px;
+  }
+  .footer-input {
+    width: 233px;
+    height: 45px;
+  }
+  .footer-btn {
+    padding: 14px 28px;
+    width: 128px;
+  }
+  .footer-formwrap-div {
+    flex-direction: row;
+  }
+  .footer-form {
+    gap: 7px;
+  }
 }
 @media screen and (min-width: 1166px) {
 }
