@@ -356,13 +356,30 @@
         <div class="made-div container">
           <h2 class="made-title title-style">HOW IT’S <span>MADE?</span></h2>
           <div class="made-list-wrap">
-            <img
-              class="made-img"
-              src="./images/made-mobile.jpg"
-              alt="coffee"
-              width="600"
-              height="400"
-            />
+            <picture>
+              <source
+                srcset="./images/made-laptop2x.jpg 2x"
+                media="(min-width: 1128px)"
+              />
+              <source
+                srcset="
+                  ./images/made-tablet1x.jpg 1x,
+                  ./images/made-tablet2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="./images/made-mobile.jpg 1x, ./images/made-mob2x.jpg 2x"
+                media="(max-width:767px)"
+              />
+              <img
+                class="made-img"
+                src="./images/made-mobile.jpg"
+                alt="coffee"
+                width="600"
+                height="400"
+              />
+            </picture>
             <div class="made-text-wrap">
               <p class="made-text">
                 Try our chocolates today and discover the perfect balance of
@@ -569,6 +586,27 @@
             class="modal-textarea"
             placeholder="Enter text"
           ></textarea>
+          <div class="checkbox-div">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="policy"
+              value="true"
+              class="input-checkbox visually-hidden"
+              checked
+            />
+            <div class="text-policy">
+              <label for="policy" class="checkbox-text">
+                <span>
+                  <svg class="checkbox-icon" width="10px" height="10px">
+                    <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the
+                <a class="privacy-link" href="">Privacy Policy</a></label
+              >
+            </div>
+          </div>
           <button type="submit" class="modal-btn-send">Send</button>
         </form>
       </div>
