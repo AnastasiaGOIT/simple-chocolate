@@ -93,28 +93,64 @@ a {
   position: fixed;
   width: 100%;
   height: 100%;
+  left: 0;
   top: 0;
   z-index: 2;
+  background-color: #1e1823;
+  padding: 20px 20px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.open-menu-btn {
+.close-menu-btn {
+  display: block;
+  margin-left: auto;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 .mobile-menu-close {
+  stroke: #fff;
 }
 .mob-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 136px;
 }
 .mob-menu-item {
 }
 .mob-menu-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.28px;
+}
+.mob-menu-link:focus,
+.mob-menu-link:hover {
+  color: var(--orange-color);
+  transition: color 300ms ease-in-out;
 }
 .mob-soc-list {
+  display: flex;
+  gap: 18px;
+}
+.menu-list-soc-div {
+  display: flex;
+  flex-direction: column;
 }
 .header-soc-item {
 }
 .header-soc-link {
 }
 .header-insta {
+  fill: #fff;
 }
 .header-twit {
+  fill: #fff;
 }
 .header-logo-link {
   display: flex;
